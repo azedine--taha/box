@@ -9,7 +9,7 @@ public class Token implements Serializable {
 
     public Token(String value) {
         this.value = value;
-        this.type = "BASIC";
+        this.type = "BEARER";
     }
 
     public String getValue() {

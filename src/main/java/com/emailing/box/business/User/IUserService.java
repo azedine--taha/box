@@ -8,6 +8,8 @@ public interface IUserService {
 
     User findByUserName(String userName);
 
+    User findByEmail (String email);
+
     List<User> getAll();
 
     void save(User user);
