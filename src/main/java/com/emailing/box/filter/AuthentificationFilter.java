@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.core.HttpHeaders;
+import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.Provider;
 import java.io.IOException;
 
@@ -31,19 +32,24 @@ public class AuthentificationFilter extends GenericFilter implements Filter  {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
 
-        SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this, getServletContext());
-
-
+       // SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this, getServletContext());
         HttpServletRequest req = (HttpServletRequest) request;
-        LOG.info("Header of request  : {}",req.getHeader(HttpHeaders.AUTHORIZATION));
-        String jwtToken = req.getHeader(HttpHeaders.AUTHORIZATION);
+        HttpServletResponse res = (HttpServletResponse) response;
 
-        if(this.validaor.isValidToken((jwtToken))) {
-            return;
+        if(!req.getRequestURI().contains("token")) {
+
+            LOG.info("Header of request  : {}",req.getHeader(HttpHeaders.AUTHORIZATION));
+            String jwtToken = req.getHeader(HttpHeaders.AUTHORIZATION);
+
+            if(!this.validaor.isValidToken((jwtToken))) {
+                res.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+                return;
+            }
+            filterChain.doFilter(request,response);
+        }else  {
+            filterChain.doFilter(request,response);
+
         }
-        filterChain.doFilter(request,response);
-
-
 
     }
 }

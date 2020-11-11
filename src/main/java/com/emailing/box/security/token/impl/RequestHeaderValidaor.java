@@ -18,15 +18,17 @@ import java.util.Date;
 public class RequestHeaderValidaor {
 
     private static final String SECRET = "SecretKeyToGenJWTs";
-    private static final String BEARER = "Bearer";
+    private static final String BEARER = "Bearer ";
+    private static final String BASIC = "Basic ";
     private static final String AUDIENCE = "audience";
-    public static final long EXPIRATION_TIME = 864_000_000; // 10 days
+    public static final long EXPIRATION_TIME = 864000000; // 10 days
 
     private ValidToken valideToken;
 
     public boolean isValidToken (String jwtToken){
         try {
-            String token = jwtToken.substring(BEARER.length()).trim();
+
+           String token = jwtToken.substring(BEARER.length()).trim();
             this.valideToken = new ValidToken(this.validateAndParseClaims(token));
             return true;
         }catch (Exception e) {
@@ -37,7 +39,7 @@ public class RequestHeaderValidaor {
     private Jws<Claims> validateAndParseClaims(String jwtToken) throws Exception{
         try {
             // Parse the token
-            final Jws<Claims> parsedClaims = Jwts.parser().setSigningKey(this.SECRET).parseClaimsJws(jwtToken);
+             Jws<Claims> parsedClaims = Jwts.parser().setSigningKey(this.SECRET).parseClaimsJws(jwtToken);
             // Validate the claims
             validateClaims(parsedClaims);
             // The claims are valid

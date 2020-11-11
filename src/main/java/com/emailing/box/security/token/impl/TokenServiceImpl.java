@@ -32,6 +32,7 @@ public class TokenServiceImpl implements TokenService {
                 .claim("role", role)
                 .setAudience("audience")
                 .setSubject(login)
+                .setIssuedAt(now)
                 .setExpiration(Date.from(now.toInstant().plus(EXPIRATION_TIME, ChronoUnit.SECONDS)))
                 .signWith(SignatureAlgorithm.HS512,SECRET)
                 .compact();

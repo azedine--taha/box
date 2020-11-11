@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response;
 
-
 @RestController
 public interface AuthenticationRessources {
 
