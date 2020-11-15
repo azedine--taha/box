@@ -1,7 +1,7 @@
 package com.emailing.box;
 
-import com.emailing.box.business.User.IRoleService;
-import com.emailing.box.business.User.IUserService;
+import com.emailing.box.business.user.IRoleService;
+import com.emailing.box.business.user.IUserService;
 import com.emailing.box.entities.Role;
 import com.emailing.box.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +10,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-import java.util.Arrays;
-import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 

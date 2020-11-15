@@ -1,6 +1,7 @@
 package com.emailing.box.filter;
 
 
+import com.emailing.box.commons.context.UserContext;
 import com.emailing.box.security.CustomUserDetailsService;
 import com.emailing.box.security.token.JwtUtil;
 import org.slf4j.Logger;
@@ -58,6 +59,8 @@ public class AuthentificationFilter extends OncePerRequestFilter {
             );
             // authToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
             SecurityContextHolder.getContext().setAuthentication(authToken);
+
+            UserContext.setUserLogin(username);
         }
         filterChain.doFilter(request,response);
     }

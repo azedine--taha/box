@@ -1,6 +1,6 @@
 package com.emailing.box.ressources.impl;
 
-import com.emailing.box.business.User.IUserService;
+import com.emailing.box.business.user.IUserService;
 import com.emailing.box.entities.User;
 import com.emailing.box.ressources.AuthenticationRessources;
 import com.emailing.box.security.token.JwtUtil;

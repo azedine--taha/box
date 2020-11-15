@@ -1,4 +1,4 @@
-package com.emailing.box.business.User;
+package com.emailing.box.business.user;
 
 import com.emailing.box.entities.Role;
 

@@ -1,6 +1,6 @@
-package com.emailing.box.business.User.Impl;
+package com.emailing.box.business.user.Impl;
 
-import com.emailing.box.business.User.IRoleService;
+import com.emailing.box.business.user.IRoleService;
 import com.emailing.box.entities.Role;
 import com.emailing.box.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;

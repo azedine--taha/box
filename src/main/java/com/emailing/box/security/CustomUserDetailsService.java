@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import com.emailing.box.business.User.IUserService;
+import com.emailing.box.business.user.IUserService;
 import com.emailing.box.entities.Role;
 import com.emailing.box.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;

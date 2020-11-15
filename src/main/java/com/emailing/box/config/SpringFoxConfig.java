@@ -42,7 +42,7 @@ public class SpringFoxConfig {
      * @return API information
      */
     private ApiInfo apiInfo(String title, String description) {
-        Contact contact = new Contact("Indra Basak", "",
+        Contact contact = new Contact("Azedine lamaouaj", "",
                 "azedinetaha@gmail.com");
         return new ApiInfo(title, description, "1.0.0",
                 "terms of service url",
