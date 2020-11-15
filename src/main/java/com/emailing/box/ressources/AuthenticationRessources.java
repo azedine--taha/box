@@ -1,4 +1,4 @@
-package com.emailing.box.security.ressources;
+package com.emailing.box.ressources;
 
 
 import org.springframework.web.bind.annotation.PostMapping;

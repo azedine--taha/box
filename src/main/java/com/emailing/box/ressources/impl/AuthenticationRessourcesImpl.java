@@ -1,15 +1,13 @@
-package com.emailing.box.security.ressources.impl;
+package com.emailing.box.ressources.impl;
 
 import com.emailing.box.business.User.IUserService;
 import com.emailing.box.entities.User;
-import com.emailing.box.security.ressources.AuthenticationRessources;
+import com.emailing.box.ressources.AuthenticationRessources;
+import com.emailing.box.security.token.JwtUtil;
 import com.emailing.box.security.token.Token;
-import com.emailing.box.security.token.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.core.Response;
 
 import static javax.ws.rs.core.Response.Status.OK;
@@ -19,7 +17,7 @@ import static javax.ws.rs.core.Response.Status.OK;
 public class AuthenticationRessourcesImpl implements AuthenticationRessources {
 
     @Autowired
-    TokenService tokenService;
+    JwtUtil tokenService;
 
     @Autowired
     IUserService userService;
@@ -33,7 +31,7 @@ public class AuthenticationRessourcesImpl implements AuthenticationRessources {
         if(user == null){
             throw new Exception (" Invalid credentials ");
         }
-        Token token =  tokenService.getJwtToken(loginHolder.getLogin(),user.getRoles().stream().findFirst().get().getRoleName());
+        Token token =  tokenService.generateToken(loginHolder.getLogin());
         return Response.status(OK).entity(token).build();
 
     }

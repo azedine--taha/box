@@ -1,55 +1,64 @@
 package com.emailing.box.filter;
 
 
-import com.emailing.box.security.token.impl.RequestHeaderValidaor;
+import com.emailing.box.security.CustomUserDetailsService;
+import com.emailing.box.security.token.JwtUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.support.SpringBeanAutowiringSupport;
-import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.servlet.*;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.ws.rs.container.ContainerRequestContext;
-import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response;
-import javax.ws.rs.ext.Provider;
 import java.io.IOException;
 
-@Component
-public class AuthentificationFilter extends GenericFilter implements Filter  {
-
+public class AuthentificationFilter extends OncePerRequestFilter {
     private static final Logger  LOG = LoggerFactory.getLogger(AuthentificationFilter.class);
 
-    @Autowired
-    private RequestHeaderValidaor validaor ;
+    private JwtUtil jwtUtil ;
 
+
+    private CustomUserDetailsService customUserDetailsService;
+
+    public AuthentificationFilter(JwtUtil jwtUtil, CustomUserDetailsService customUserDetailsService) {
+        this.jwtUtil = jwtUtil;
+        this.customUserDetailsService = customUserDetailsService;
+    }
 
     @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        LOG.info("Header of request  : {}",request.getHeader(HttpHeaders.AUTHORIZATION));
+        String jwtToken = request.getHeader(HttpHeaders.AUTHORIZATION);
 
-       // SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this, getServletContext());
-        HttpServletRequest req = (HttpServletRequest) request;
-        HttpServletResponse res = (HttpServletResponse) response;
+        String requestURI = request.getRequestURI();
+        if (requestURI.contains("swagger")) {
+            // Ne pas faire le test d'authentification quand on est sur l'interface d'accueil de SWAGGER
+        } else if (request != null && "OPTIONS".equals(request.getMethod()) ){
+            // Laisser passer les appels de type OPTIONS
+            response.setStatus(HttpServletResponse.SC_OK);
+        } else if(!request.getRequestURI().contains("token")) {
 
-        if(!req.getRequestURI().contains("token")) {
+            String username = "azedinetaha@gmail.com";
+            UserDetails userDetails = customUserDetailsService.loadUserByUsername(username);
 
-            LOG.info("Header of request  : {}",req.getHeader(HttpHeaders.AUTHORIZATION));
-            String jwtToken = req.getHeader(HttpHeaders.AUTHORIZATION);
 
-            if(!this.validaor.isValidToken((jwtToken))) {
-                res.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            if(!this.jwtUtil.validateToken(jwtToken,username)) {
+                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
                 return;
             }
-            filterChain.doFilter(request,response);
-        }else  {
-            filterChain.doFilter(request,response);
-
+            UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(
+                    userDetails,userDetails.getPassword(),userDetails.getAuthorities()
+            );
+            // authToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+            SecurityContextHolder.getContext().setAuthentication(authToken);
         }
-
+        filterChain.doFilter(request,response);
     }
 }
