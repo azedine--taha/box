@@ -8,8 +8,12 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+@Order(1)
+@Service
 @Aspect
 public class BusinessLoggableAspect {
 
@@ -32,7 +36,8 @@ public class BusinessLoggableAspect {
             String methodeName = joinPoint.getSignature().getName();
 
             // fill the context.
-            MDC.put(KEY_CLASSE_METHOD_RESOURCE, className + "/" + methodeName);
+            MDC.put("logClassAndMethodResourceFolder", className + "/" + methodeName);
+            LOG.info("bla BLA");
             return joinPoint.proceed();
         } catch (Exception e) {
             LOG.error("Error in log around : ", e);
