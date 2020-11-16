@@ -2,6 +2,7 @@ package com.emailing.box.ressources;
 
 
 import com.emailing.box.business.user.IUserService;
+import com.emailing.box.commons.aspect.BusinessLoggable;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,7 @@ public class UserRessources {
 
     @ApiOperation(value = "This method is used to get the users.")
     @GetMapping(value = "/users")
+    @BusinessLoggable
     public Response getUsers(){
         return Response.status(Status.OK).entity(userService.getAll()).build();
     }

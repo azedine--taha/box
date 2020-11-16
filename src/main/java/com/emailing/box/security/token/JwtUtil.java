@@ -22,7 +22,7 @@ public class JwtUtil {
     @Value("${token.secret}")
     private String SECRET_KEY ;
 
-    @Value("${token.expirationtime}")
+    @Value("${token.expiration}")
     private long EXPIRATION_TIME ;
 
     private static final String BEARER = "Bearer ";
@@ -63,9 +63,6 @@ public class JwtUtil {
     }
 
     public Boolean validateToken(String token, String username) {
-         token = token.substring(BEARER.length()).trim();
-        String s = extractUsername(token);
-        boolean b = s.equals(username) && !isTokenExpired(token);
-        return b;
+        return  extractUsername(token).equals(username) && !isTokenExpired(token);
     }
 }

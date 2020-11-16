@@ -1,0 +1,26 @@
+2020-11-16 16:08:33 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Starting BoxApplication on FRPC0095 with PID 131084 (D:\workspace\box\target\classes started by ALAMAOUJ in D:\workspace\box)
+2020-11-16 16:08:33 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
+                        Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-16 16:08:33 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        No active profile set, falling back to default profiles: default
+2020-11-16 16:08:36 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Started BoxApplication in 10.666 seconds (JVM running for 475.003)
+2020-11-16 16:09:04 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Starting BoxApplication on FRPC0095 with PID 198568 (D:\workspace\box\target\classes started by ALAMAOUJ in D:\workspace\box)
+2020-11-16 16:09:04 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
+                        Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-16 16:09:04 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        No active profile set, falling back to default profiles: default
+2020-11-16 16:09:18 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Started BoxApplication in 15.474 seconds (JVM running for 16.86)
+2020-11-16 16:09:22 | [http-nio-6062-exec-1] |  INFO | c.e.b.filter.AuthentificationFilter -
+                        Header of request  : Basic YXplZGluZXRhaGFAZ21haWwuY29tOnRlc3Q=
+2020-11-16 16:09:37 | [http-nio-6062-exec-3] |  INFO | c.e.b.filter.AuthentificationFilter -
+                        Header of request  : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NDAyMjYsImlhdCI6MTYwNTUzOTM2M30.MbptN1V9wEOgZ1dE20GStKAmYHSReI6ej80gAjzJ0l2DZJpg8OLhuHAgByP5AfWk_VXfcGnMDGMQqmKjjtpi8A
+2020-11-16 16:09:41 | [http-nio-6062-exec-4] |  INFO | c.e.b.filter.AuthentificationFilter -
+                        Header of request  : Bearer eyJhbGciOiJIUzUxMi9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NDAyMjYsImlhdCI6MTYwNTUzOTM2M30.MbptN1V9wEOgZ1dE20GStKAmYHSReI6ej80gAjzJ0l2DZJpg8OLhuHAgByP5AfWk_VXfcGnMDGMQqmKjjtpi8A
+2020-11-16 16:09:54 | [http-nio-6062-exec-7] |  INFO | c.e.b.filter.AuthentificationFilter -
+                        Header of request  : Bearer eyJhbGciOiJIUzUxMi9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NDAyMjYsImlhdCI6MTYwNTUzOTM2M30.MbptN1V9wEOgZ1dE20GStKAmYHSReI6ej80gAjzJ0l2DZJpg8OLhuHAgByP5AfWk_VXfcGnMDGMQqmKjjtpi8A
+2020-11-16 16:10:09 | [http-nio-6062-exec-5] |  INFO | c.e.b.filter.AuthentificationFilter -
+                        Header of request  : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NDAyMjYsImlhdCI6MTYwNTUzOTM2M30.MbptN1V9wEOgZ1dE20GStKAmYHSReI6ej80gAjzJ0l2DZJpg8OLhuHAgByP5AfWk_VXfcGnMDGMQqmKjjtpi8A

@@ -4,6 +4,7 @@ package com.emailing.box.filter;
 import com.emailing.box.commons.context.UserContext;
 import com.emailing.box.security.CustomUserDetailsService;
 import com.emailing.box.security.token.JwtUtil;
+import javafx.beans.binding.Bindings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,7 @@ import java.io.IOException;
 
 public class AuthentificationFilter extends OncePerRequestFilter {
     private static final Logger  LOG = LoggerFactory.getLogger(AuthentificationFilter.class);
+    private static final String BEARER = "Bearer " ;
 
     private JwtUtil jwtUtil ;
 
@@ -36,7 +38,7 @@ public class AuthentificationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         LOG.info("Header of request  : {}",request.getHeader(HttpHeaders.AUTHORIZATION));
-        String jwtToken = request.getHeader(HttpHeaders.AUTHORIZATION);
+        String jwtToken = request.getHeader(HttpHeaders.AUTHORIZATION).substring(BEARER.length()).trim();
 
         String requestURI = request.getRequestURI();
         if (requestURI.contains("swagger")) {
@@ -46,7 +48,7 @@ public class AuthentificationFilter extends OncePerRequestFilter {
             response.setStatus(HttpServletResponse.SC_OK);
         } else if(!request.getRequestURI().contains("token")) {
 
-            String username = "azedinetaha@gmail.com";
+            String username = this.jwtUtil.extractUsername(jwtToken);
             UserDetails userDetails = customUserDetailsService.loadUserByUsername(username);
 
 
