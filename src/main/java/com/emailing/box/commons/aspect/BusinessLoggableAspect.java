@@ -37,7 +37,6 @@ public class BusinessLoggableAspect {
 
             // fill the context.
             MDC.put("logClassAndMethodResourceFolder", className + "/" + methodeName);
-            LOG.info("bla BLA");
             return joinPoint.proceed();
         } catch (Exception e) {
             LOG.error("Error in log around : ", e);

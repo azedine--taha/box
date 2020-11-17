@@ -1,8 +1,9 @@
-package com.emailing.box.ressources.impl;
+package com.emailing.box.ressources.user.impl;
 
 import com.emailing.box.business.user.IUserService;
 import com.emailing.box.entities.User;
-import com.emailing.box.ressources.AuthenticationRessources;
+import com.emailing.box.ressources.dto.UserDto;
+import com.emailing.box.ressources.user.AuthenticationRessources;
 import com.emailing.box.security.token.JwtUtil;
 import com.emailing.box.security.token.Token;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +28,7 @@ public class AuthenticationRessourcesImpl implements AuthenticationRessources {
         LoginHolder loginHolder = new LoginHolder(authHeader);
 
         //Check if user exist in database
-        User user = checkUserinDb(loginHolder);
+        UserDto user = checkUserinDb(loginHolder);
         if(user == null){
             throw new Exception (" Invalid credentials ");
         }
@@ -36,8 +37,8 @@ public class AuthenticationRessourcesImpl implements AuthenticationRessources {
 
     }
 
-    private User checkUserinDb(LoginHolder loginHolder) {
-        User user = userService.findByEmail(loginHolder.getLogin());
+    private UserDto checkUserinDb(LoginHolder loginHolder) {
+        UserDto user = userService.findByEmail(loginHolder.getLogin());
         if (user != null && user.getPassword().equals(loginHolder.getPassword())) {
             return user;
         }
