@@ -31,7 +31,7 @@ public class BoxApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Role roleAdmin = new Role(1L,"admin");
+	/*	Role roleAdmin = new Role(1L,"admin");
 		Role roleUser = new Role(2L,"user");
 		Role roleSuper = new Role(3L,"root");
 
@@ -39,7 +39,7 @@ public class BoxApplication implements CommandLineRunner {
 		User user2 = new User(2L,"Taha","AZIOIZ","FOUAD","123456","fouad.azioiz@gmail.com", (Stream.of(roleUser).collect(Collectors.toSet())));
 
 
-		/*roleService.saveRole(roleAdmin);
+		roleService.saveRole(roleAdmin);
 		roleService.saveRole(roleUser);
 
 		userService.save(user1);

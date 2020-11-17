@@ -7,16 +7,19 @@ import com.emailing.box.ressources.dto.UserDto;
 import java.util.HashSet;
 import java.util.Set;
 import javax.annotation.Generated;
-import org.mapstruct.factory.Mappers;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-11-18T00:00:30+0100",
+    date = "2020-11-18T00:17:41+0100",
     comments = "version: 1.4.1.Final, compiler: javac, environment: Java 1.8.0_261 (Oracle Corporation)"
 )
+@Component
 public class UserMapperImpl implements UserMapper {
 
-    private final RoleMapper roleMapper = Mappers.getMapper( RoleMapper.class );
+    @Autowired
+    private RoleMapper roleMapper;
 
     @Override
     public UserDto mapDto(User user) {

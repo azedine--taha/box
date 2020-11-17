@@ -4,7 +4,7 @@ import com.emailing.box.entities.Role;
 import com.emailing.box.ressources.dto.RoleDto;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface RoleMapper {
 
     RoleDto mapDto(Role role);

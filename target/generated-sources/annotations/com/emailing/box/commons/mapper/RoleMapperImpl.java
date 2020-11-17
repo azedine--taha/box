@@ -3,12 +3,14 @@ package com.emailing.box.commons.mapper;
 import com.emailing.box.entities.Role;
 import com.emailing.box.ressources.dto.RoleDto;
 import javax.annotation.Generated;
+import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-11-18T00:00:30+0100",
+    date = "2020-11-18T00:18:07+0100",
     comments = "version: 1.4.1.Final, compiler: javac, environment: Java 1.8.0_261 (Oracle Corporation)"
 )
+@Component
 public class RoleMapperImpl implements RoleMapper {
 
     @Override
