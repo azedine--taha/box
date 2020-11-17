@@ -1,4 +1,4 @@
-package com.emailing.box.ressources.impl;
+package com.emailing.box.ressources.user.impl;
 
 
 import java.nio.charset.StandardCharsets;

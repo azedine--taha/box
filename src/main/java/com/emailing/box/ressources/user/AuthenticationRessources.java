@@ -1,4 +1,4 @@
-package com.emailing.box.ressources;
+package com.emailing.box.ressources.user;
 
 
 import org.springframework.web.bind.annotation.PostMapping;

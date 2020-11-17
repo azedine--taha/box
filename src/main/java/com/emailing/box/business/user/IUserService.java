@@ -1,16 +1,17 @@
 package com.emailing.box.business.user;
 
 import com.emailing.box.entities.User;
+import com.emailing.box.ressources.dto.UserDto;
 
 import java.util.List;
 
 public interface IUserService {
 
-    User findByUserName(String userName);
+    UserDto findByUserName(String userName);
 
-    User findByEmail (String email);
+    UserDto findByEmail (String email);
 
-    List<User> getAll();
+    List<UserDto> getAll();
 
-    void save(User user);
+    void save(UserDto user);
 }

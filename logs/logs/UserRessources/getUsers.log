@@ -1,2 +1,4 @@
-2020-11-16 23:11:13 | [http-nio-6062-exec-5] |  INFO | c.e.b.c.a.BusinessLoggableAspect -
+2020-11-17 12:13:26 | [http-nio-6062-exec-3] |  INFO | c.e.b.c.a.BusinessLoggableAspect -
+                        bla BLA
+2020-11-17 12:13:52 | [http-nio-6062-exec-5] |  INFO | c.e.b.c.a.BusinessLoggableAspect -
                         bla BLA

@@ -9,6 +9,8 @@ import java.util.stream.Collectors;
 import com.emailing.box.business.user.IUserService;
 import com.emailing.box.entities.Role;
 import com.emailing.box.entities.User;
+import com.emailing.box.ressources.dto.RoleDto;
+import com.emailing.box.ressources.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -33,22 +35,22 @@ public class CustomUserDetailsService implements UserDetailsService {
             throw new UsernameNotFoundException("username is empty");
         }
 
-        User user = userService.findByEmail(usernameOrEmail);
+        UserDto user = userService.findByEmail(usernameOrEmail);
 
         if (user == null) {
             throw new UsernameNotFoundException("User " + usernameOrEmail + " not found");
         }
 
-        return new org.springframework.security.core.userdetails.User(user.getUserName(), user.getPassword(),
+        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(),
                 getGrantedAuthorities(user));
     }
 
-    private List<GrantedAuthority> getGrantedAuthorities(User user) {
+    private List<GrantedAuthority> getGrantedAuthorities(UserDto user) {
         List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
-        Set<Role> role = user.getRoles();
+        Set<RoleDto> role = user.getRoles();
         role.stream()
                 .map(r->{
-                    return authorities.add(new SimpleGrantedAuthority(r.getRoleName()));
+                    return authorities.add(new SimpleGrantedAuthority(r.getRolename()));
                 }).collect(Collectors.toList());
         return authorities;
     }
