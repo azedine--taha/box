@@ -2,6 +2,8 @@
 
 <configuration scan="true">
 
+    <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />
+
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
     <property name="APP_NAME" value="box" />
@@ -28,9 +30,8 @@
             <defaultValue>${APP_NAME}</defaultValue>
         </discriminator>
         <sift>
-            <appender name="${logClassAndMethodResourceFolder}"
-
-                class="ch.qos.logback.core.FileAppender">
+            <appender name="FILE-${logClassAndMethodResourceFolder}"
+                      class="ch.qos.logback.core.rolling.RollingFileAppender">
                 <file>${LOG_PATH}/logs/${logClassAndMethodResourceFolder}.log</file>
 
                 <encoder
@@ -43,7 +44,7 @@
                 <rollingPolicy
                         class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
                     <!-- création de fichier de manière journalière . -->
-                    <fileNamePattern>${LOG_PATH}/logs/${logClassAndMethodRessourceFolder}.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
+                    <fileNamePattern>${LOG_PATH}/logs/${logClassAndMethodResourceFolder}_archived.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
                     <maxHistory>14</maxHistory>
                     <cleanHistoryOnStart>true</cleanHistoryOnStart>
                 </rollingPolicy>

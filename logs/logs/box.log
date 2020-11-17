@@ -1,50 +1,90 @@
-2020-11-16 23:06:05 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
-                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 6288 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
-2020-11-16 23:06:05 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
+2020-11-16 23:18:44 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 11968 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
+2020-11-16 23:18:44 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
                         Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
-2020-11-16 23:06:05 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+2020-11-16 23:18:44 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
                         No active profile set, falling back to default profiles: default
-2020-11-16 23:06:07 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
+2020-11-16 23:18:46 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
                         Found AspectJ method: public java.lang.Object com.emailing.box.commons.aspect.BusinessLoggableAspect.logAround(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
-2020-11-16 23:06:11 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
-                        Started BoxApplication in 6.501 seconds (JVM running for 7.142)
-2020-11-16 23:06:20 | [http-nio-6062-exec-1] |  INFO | c.e.b.filter.AuthentificationFilter -
-                        Header of request  : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NjQ1NTYsImlhdCI6MTYwNTU2MzY5Mn0.F0_LRn8DlirK34Bp7EjcWhU6NF5Yb5PiJA29S59TPlOkLUIfjBqwzihZ_R8NonWv11QNswPyP-RWvAbyygxIjA
-2020-11-16 23:07:53 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
-                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 11792 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
-2020-11-16 23:07:53 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
+2020-11-16 23:19:20 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 12804 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
+2020-11-16 23:19:20 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
                         Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
-2020-11-16 23:07:53 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+2020-11-16 23:19:20 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
                         No active profile set, falling back to default profiles: default
-2020-11-16 23:07:54 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
+2020-11-16 23:19:22 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
                         Found AspectJ method: public java.lang.Object com.emailing.box.commons.aspect.BusinessLoggableAspect.logAround(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
-2020-11-16 23:07:59 | [http-nio-6062-exec-2] |  INFO | c.e.b.filter.AuthentificationFilter -
-                        Header of request  : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NjQ1NTYsImlhdCI6MTYwNTU2MzY5Mn0.F0_LRn8DlirK34Bp7EjcWhU6NF5Yb5PiJA29S59TPlOkLUIfjBqwzihZ_R8NonWv11QNswPyP-RWvAbyygxIjA
-2020-11-16 23:07:59 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
-                        Started BoxApplication in 7.0 seconds (JVM running for 7.674)
-2020-11-16 23:10:49 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
-                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 10716 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
-2020-11-16 23:10:49 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
-                        Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
-2020-11-16 23:10:49 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
-                        No active profile set, falling back to default profiles: default
-2020-11-16 23:10:50 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
-                        Found AspectJ method: public java.lang.Object com.emailing.box.commons.aspect.BusinessLoggableAspect.logAround(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
-2020-11-16 23:10:54 | [http-nio-6062-exec-2] |  INFO | c.e.b.filter.AuthentificationFilter -
-                        Header of request  : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NjQ1NTYsImlhdCI6MTYwNTU2MzY5Mn0.F0_LRn8DlirK34Bp7EjcWhU6NF5Yb5PiJA29S59TPlOkLUIfjBqwzihZ_R8NonWv11QNswPyP-RWvAbyygxIjA
-2020-11-16 23:10:55 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
-                        Started BoxApplication in 6.876 seconds (JVM running for 7.605)
-2020-11-16 23:11:00 | [http-nio-6062-exec-6] |  INFO | c.e.b.filter.AuthentificationFilter -
+2020-11-16 23:19:26 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Started BoxApplication in 6.627 seconds (JVM running for 7.311)
+2020-11-16 23:19:42 | [http-nio-6062-exec-2] |  INFO | c.e.b.filter.AuthentificationFilter -
                         Header of request  : Basic YXplZGluZXRhaGFAZ21haWwuY29tOnRlc3Q=
-2020-11-16 23:11:13 | [http-nio-6062-exec-5] |  INFO | c.e.b.filter.AuthentificationFilter -
-                        Header of request  : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NjU1MjQsImlhdCI6MTYwNTU2NDY2MH0.1OCBylnfKkEuLK9CM8vCi1N_cwiKevS8r_JJeToXwcq51v4AGTKs8kbYjeJEehbk58q7f8zSEl0cG_1xEjy3ZQ
-2020-11-16 23:11:40 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
-                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 10716 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
-2020-11-16 23:11:40 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
+2020-11-16 23:19:54 | [http-nio-6062-exec-3] |  INFO | c.e.b.filter.AuthentificationFilter -
+                        Header of request  : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NjYwNDYsImlhdCI6MTYwNTU2NTE4Mn0.bYNgIr1Zicn0r1KEExXOmg5dS3HHTdvUV69XIO4ZZc_z7dD-pi6dE6srjYtSohh46I_6Kow-vehnKSz65sTufA
+2020-11-16 23:24:32 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 968 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
+2020-11-16 23:24:32 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
                         Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
-2020-11-16 23:11:40 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+2020-11-16 23:24:32 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
                         No active profile set, falling back to default profiles: default
-2020-11-16 23:11:40 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
+2020-11-16 23:24:35 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
                         Found AspectJ method: public java.lang.Object com.emailing.box.commons.aspect.BusinessLoggableAspect.logAround(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
-2020-11-16 23:11:41 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
-                        Started BoxApplication in 1.505 seconds (JVM running for 54.169)
+2020-11-16 23:24:39 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Started BoxApplication in 7.031 seconds (JVM running for 7.689)
+2020-11-16 23:24:39 | [http-nio-6062-exec-2] |  INFO | c.e.b.filter.AuthentificationFilter -
+                        Header of request  : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NjYwNDYsImlhdCI6MTYwNTU2NTE4Mn0.bYNgIr1Zicn0r1KEExXOmg5dS3HHTdvUV69XIO4ZZc_z7dD-pi6dE6srjYtSohh46I_6Kow-vehnKSz65sTufA
+2020-11-16 23:25:27 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 968 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
+2020-11-16 23:25:27 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
+                        Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-16 23:25:27 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        No active profile set, falling back to default profiles: default
+2020-11-16 23:25:28 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
+                        Found AspectJ method: public java.lang.Object com.emailing.box.commons.aspect.BusinessLoggableAspect.logAround(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+2020-11-16 23:25:29 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Started BoxApplication in 1.507 seconds (JVM running for 57.551)
+2020-11-16 23:28:17 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 10848 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
+2020-11-16 23:28:17 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
+                        Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-16 23:28:17 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        No active profile set, falling back to default profiles: default
+2020-11-16 23:28:19 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
+                        Found AspectJ method: public java.lang.Object com.emailing.box.commons.aspect.BusinessLoggableAspect.logAround(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+2020-11-16 23:28:24 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Started BoxApplication in 7.327 seconds (JVM running for 7.983)
+2020-11-16 23:28:24 | [http-nio-6062-exec-2] |  INFO | c.e.b.filter.AuthentificationFilter -
+                        Header of request  : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NjYwNDYsImlhdCI6MTYwNTU2NTE4Mn0.bYNgIr1Zicn0r1KEExXOmg5dS3HHTdvUV69XIO4ZZc_z7dD-pi6dE6srjYtSohh46I_6Kow-vehnKSz65sTufA
+2020-11-16 23:29:03 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 10848 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
+2020-11-16 23:29:03 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
+                        Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-16 23:29:03 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        No active profile set, falling back to default profiles: default
+2020-11-16 23:29:04 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
+                        Found AspectJ method: public java.lang.Object com.emailing.box.commons.aspect.BusinessLoggableAspect.logAround(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+2020-11-16 23:29:05 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Started BoxApplication in 1.723 seconds (JVM running for 48.793)
+2020-11-16 23:29:17 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 14904 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
+2020-11-16 23:29:17 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
+                        Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-16 23:29:17 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        No active profile set, falling back to default profiles: default
+2020-11-16 23:29:19 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
+                        Found AspectJ method: public java.lang.Object com.emailing.box.commons.aspect.BusinessLoggableAspect.logAround(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+2020-11-16 23:29:23 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Started BoxApplication in 6.973 seconds (JVM running for 7.64)
+2020-11-16 23:29:26 | [http-nio-6062-exec-4] |  INFO | c.e.b.filter.AuthentificationFilter -
+                        Header of request  : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NjYwNDYsImlhdCI6MTYwNTU2NTE4Mn0.bYNgIr1Zicn0r1KEExXOmg5dS3HHTdvUV69XIO4ZZc_z7dD-pi6dE6srjYtSohh46I_6Kow-vehnKSz65sTufA
+2020-11-16 23:30:13 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Starting BoxApplication on DESKTOP-CA2OVQH with PID 13692 (C:\Users\hp\Desktop\azedine_doc\spring_example\box\target\classes started by hp in C:\Users\hp\Desktop\azedine_doc\spring_example\box)
+2020-11-16 23:30:13 | [restartedMain] |  DEBUG | com.emailing.box.BoxApplication -
+                        Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-16 23:30:13 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        No active profile set, falling back to default profiles: default
+2020-11-16 23:30:15 | [restartedMain] |  DEBUG | o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
+                        Found AspectJ method: public java.lang.Object com.emailing.box.commons.aspect.BusinessLoggableAspect.logAround(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+2020-11-16 23:30:19 | [restartedMain] |  INFO | com.emailing.box.BoxApplication -
+                        Started BoxApplication in 6.397 seconds (JVM running for 7.026)
+2020-11-16 23:30:26 | [http-nio-6062-exec-1] |  INFO | c.e.b.filter.AuthentificationFilter -
+                        Header of request  : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhemVkaW5ldGFoYUBnbWFpbC5jb20iLCJleHAiOjE2MDU1NjYwNDYsImlhdCI6MTYwNTU2NTE4Mn0.bYNgIr1Zicn0r1KEExXOmg5dS3HHTdvUV69XIO4ZZc_z7dD-pi6dE6srjYtSohh46I_6Kow-vehnKSz65sTufA
