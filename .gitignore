@@ -3,5 +3,5 @@
 *.iml
 *.ipr
 *.class
-
+.idea/workspace.xml
 /target/**
