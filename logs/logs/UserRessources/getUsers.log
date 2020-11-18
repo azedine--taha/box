@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-2020-11-16 23:30:26 | [http-nio-6062-exec-1] |  INFO | c.e.b.c.a.BusinessLoggableAspect -
-=======
-2020-11-17 12:13:26 | [http-nio-6062-exec-3] |  INFO | c.e.b.c.a.BusinessLoggableAspect -
-                        bla BLA
-2020-11-17 12:13:52 | [http-nio-6062-exec-5] |  INFO | c.e.b.c.a.BusinessLoggableAspect -
->>>>>>> 3c478d9d8b42780d4f2a53c1d039cb5d9c068670
-                        bla BLA

@@ -30,19 +30,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="739bc819-1b48-41a1-8a98-2174b2420160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emailing/box/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emailing/box/entities/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emailing/box/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emailing/box/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/emailing/box/ressources/dto/RoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emailing/box/ressources/dto/RoleDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/commons/mapper/RoleMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/emailing/box/commons/mapper/RoleMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/commons/mapper/UserMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/emailing/box/commons/mapper/UserMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/entities/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/emailing/box/entities/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/emailing/box/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/ressources/dto/RoleDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/emailing/box/ressources/dto/RoleDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logs/UserRessources/getUsers.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logs/box.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logs/box_archived.log.2020-11-17.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/BoxApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/business/user/IControleActionClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/business/user/IRoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/business/user/IUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/business/user/Impl/ControleACtionClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/business/user/Impl/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/business/user/Impl/UserServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/commons/aspect/BusinessLoggable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/commons/aspect/BusinessLoggableAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/commons/context/UserContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/commons/mapper/RoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/commons/mapper/RoleMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/commons/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/commons/mapper/UserMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/config/SpringFoxConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/entities/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/entities/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/filter/AuthentificationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/repository/RoleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/ressources/dto/RoleDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/ressources/dto/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/ressources/user/AuthenticationRessources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/ressources/user/UserRessources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/ressources/user/impl/AuthenticationRessourcesImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/ressources/user/impl/LoginHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/security/CustomUserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/security/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/security/token/JwtUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/emailing/box/security/token/Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback-spring.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/emailing/box/commons/mapper/RoleMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/emailing/box/commons/mapper/RoleMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/emailing/box/commons/mapper/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/emailing/box/commons/mapper/UserMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
