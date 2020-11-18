@@ -1,7 +1,7 @@
-logs\
-.idea\
-.mvn\
-target\
-.idea\
-box.iml
-mvnw.cmd
+.idea
+*.iws
+*.iml
+*.ipr
+*.class
+
+/target/**
