@@ -1,15 +1,11 @@
 com\emailing\box\security\token\Token.class
 com\emailing\box\ressources\user\AuthenticationRessources.class
 com\emailing\box\security\token\JwtUtil.class
-com\emailing\box\entities\Role.class
 com\emailing\box\security\CustomUserDetailsService.class
 com\emailing\box\repository\UserRepository.class
 com\emailing\box\security\SecurityConfig.class
 com\emailing\box\ressources\user\impl\AuthenticationRessourcesImpl.class
-com\emailing\box\ressources\dto\RoleDto.class
-com\emailing\box\business\user\IControleActionClient.class
 com\emailing\box\business\user\Impl\RoleServiceImpl.class
-com\emailing\box\ressources\dto\UserDto.class
 com\emailing\box\filter\AuthentificationFilter.class
 com\emailing\box\commons\aspect\BusinessLoggable.class
 com\emailing\box\commons\mapper\UserMapperImpl.class
@@ -20,9 +16,6 @@ com\emailing\box\commons\aspect\BusinessLoggableAspect.class
 com\emailing\box\commons\context\UserContext.class
 com\emailing\box\business\user\Impl\UserServiceImp.class
 com\emailing\box\config\SpringFoxConfig.class
-com\emailing\box\business\user\IUserService.class
-com\emailing\box\BoxApplication.class
-com\emailing\box\business\user\IRoleService.class
 com\emailing\box\business\user\Impl\ControleACtionClient.class
 com\emailing\box\ressources\user\impl\LoginHolder.class
 com\emailing\box\commons\mapper\RoleMapper.class

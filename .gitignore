@@ -1,0 +1,6 @@
+logs\
+.idea\
+.mvn\
+target\
+.idea\
+box.iml

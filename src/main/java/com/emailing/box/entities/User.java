@@ -24,11 +24,11 @@ public class User implements Serializable {
     private Long id;
 
     @Column(name = "USER_NAME",unique = true)
-    private String userName;
+    private String username;
 
-    private String Nom;
+    private String nom;
 
-    private String Prenom;
+    private String prenom;
 
     @Column(name = "MOT_PASSE",nullable = false)
     private String password;
